@@ -1,23 +1,23 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Typography from "@material-ui/core/Typography";
 import { connect } from "react-redux";
 
-const Title = ({classes, name, role}) => {
+const Title = ({ classes, name, role }) => {
   return (
     <div className={classes.root}>
-      Title
-      {name}
-      {role}
+      <Typography>{name}</Typography>
+      <Typography>{role}</Typography>
     </div>
-  )
-}
+  );
+};
 
 const mapsStateToProps = state => {
   return {
     name: state.name,
     role: state.role
-  }
-}
+  };
+};
 
 Title.propTypes = {
   classes: PropTypes.object,
@@ -25,4 +25,4 @@ Title.propTypes = {
   role: PropTypes.string.isRequired
 };
 
-export default connect(mapsStateToProps)(Title)
+export default connect(mapsStateToProps)(Title);

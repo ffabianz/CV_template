@@ -3,7 +3,7 @@ import Typography from "@material-ui/core/Typography";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 
-const experienceRows = (experiences) => {
+const experienceRows = experiences => {
   return experiences.map((experience, key) => {
     return (
       <div key={experience.key}>
@@ -13,28 +13,29 @@ const experienceRows = (experiences) => {
         <Typography>{experience.finalDate}</Typography>
         <Typography>{experience.description}</Typography>
       </div>
-    )
-  })
-}
+    );
+  });
+};
 
-const experience = ({classes, experiences}) => {
+const experience = ({ classes, experiences, experienceTitle }) => {
   return (
     <div className={classes.root}>
-      Profile
+      {experienceTitle}
       {experienceRows(experiences)}
     </div>
-  )
-}
+  );
+};
 
 const mapsStateToProps = state => {
   return {
-    experiences: state.experience,
-  }
-}
-
-experience.propTypes = {
-  classes: PropTypes.object,
-  experiences: PropTypes.array,
+    experiences: state.experience
+  };
 };
 
-export default connect(mapsStateToProps)(experience)
+experience.propTypes = {
+  classes: PropTypes.object.isRequired,
+  experiences: PropTypes.array.isRequired,
+  experienceTitle: PropTypes.string.isRequired
+};
+
+export default connect(mapsStateToProps)(experience);
