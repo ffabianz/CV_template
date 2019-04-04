@@ -28,7 +28,8 @@ const experience = ({ classes, experiences, experienceTitle }) => {
 
 const mapsStateToProps = state => {
   return {
-    experiences: state.experience
+    experiences: state.experience,
+    experienceTitle: state.experienceTitle
   };
 };
 

@@ -11,12 +11,17 @@ import { connect } from "react-redux";
 const RenderPanel = ({ classes }) => {
   return (
     <div className={classes.root}>
-      <Title />
-      <Profile />
-      <Experience />
-      <Education />
-      <Skills />
-      <Contacts />
+      <div className={classes.header}></div>
+      <div className={classes.mainPanel}>
+        <Title />
+        <Profile />
+        <Experience />
+      </div>
+      <div className={classes.sidePanel}>
+        <Contacts />
+        <Education />
+        <Skills />
+      </div>
     </div>
   );
 };

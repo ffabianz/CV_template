@@ -6,8 +6,8 @@ import { connect } from "react-redux";
 const Profile = ({ classes, profile, profileTitle }) => {
   return (
     <div className={classes.root}>
-      {profileTitle}
-      <Typography>{profile}</Typography>
+      <Typography variant="h6" className={classes.profileTitleText}>{profileTitle}</Typography>
+      <Typography className={classes.profileText}>{profile}</Typography>
     </div>
   );
 };

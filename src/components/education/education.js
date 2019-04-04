@@ -27,7 +27,8 @@ const experience = ({ classes, education, educationTitle }) => {
 
 const mapsStateToProps = state => {
   return {
-    education: state.education
+    education: state.education,
+    educationTitle: state.educationTitle
   };
 };
 

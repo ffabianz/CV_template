@@ -1,7 +1,19 @@
-const styles = () => {
+const styles = theme => {
   return {
     root: {
-      border: "1px solid black"
+      margin: "1em",
+      textTransform: "uppercase"
+    },
+    header: {
+      background: theme.palette.primary.main,
+      width: "100%",
+      height: "2em"
+    },
+    separator: {
+      background: theme.palette.primary.main,
+      width: "10%",
+      height: "0.1em",
+      margin: "auto",
     }
   };
 };

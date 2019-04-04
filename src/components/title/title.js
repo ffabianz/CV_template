@@ -6,8 +6,9 @@ import { connect } from "react-redux";
 const Title = ({ classes, name, role }) => {
   return (
     <div className={classes.root}>
-      <Typography>{name}</Typography>
-      <Typography>{role}</Typography>
+      <Typography variant="h3">{name}</Typography>
+      <div className={classes.separator}></div>
+      <Typography variant="h5">{role}</Typography>
     </div>
   );
 };

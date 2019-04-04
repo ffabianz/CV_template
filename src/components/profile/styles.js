@@ -1,7 +1,20 @@
-const styles = () => {
+const styles = theme => {
   return {
     root: {
-      border: "1px solid black"
+      margin: "1em"
+    },
+    profileTitleText: {
+      color: theme.palette.primary.light,
+      float: "left",
+      margin: "0.5em",
+      width: "100%",
+      textAlign: "left",
+      textTransform: "uppercase"
+    },
+    profileText: {
+      margin: "0.5em",
+      width: "100%",
+      textAlign: "justify"
     }
   };
 };
