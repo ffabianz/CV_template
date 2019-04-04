@@ -9,8 +9,8 @@ const initialState = {
   github: "github.com",
   experience: [
     {
-      Title: "Title",
-      Company: "#Super Company",
+      title: "Title",
+      company: "#Super Company",
       initialDate: "19-19-19",
       finalDate: "19-19-19",
       description:
@@ -20,8 +20,8 @@ const initialState = {
   ],
   education: [
     {
-      Degree: "Degree",
-      Institute: "#Super Institute",
+      degree: "Degree",
+      institute: "#Super Institute",
       initialDate: "19-19-19",
       finalDate: "19-19-19"
     }
