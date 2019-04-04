@@ -6,13 +6,13 @@ import { connect } from "react-redux";
 const experienceRows = (experiences) => {
   return experiences.map((experience, key) => {
     return (
-      <>
+      <div key={experience.key}>
         <Typography>{experience.title}</Typography>
         <Typography>{experience.company}</Typography>
         <Typography>{experience.initialDate}</Typography>
         <Typography>{experience.finalDate}</Typography>
         <Typography>{experience.description}</Typography>
-      </>
+      </div>
     )
   })
 }
@@ -34,7 +34,7 @@ const mapsStateToProps = state => {
 
 experience.propTypes = {
   classes: PropTypes.object,
-  experiences: PropTypes.string.isRequired
+  experiences: PropTypes.array,
 };
 
 export default connect(mapsStateToProps)(experience)
