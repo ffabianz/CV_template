@@ -14,6 +14,9 @@ const styles = theme => {
       width: "100%",
       textAlign: "left",
     },
+    body1: {
+      fontSize: "0.7em"
+    }
   };
 };
 
