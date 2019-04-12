@@ -16,7 +16,7 @@ const styles = theme => {
       float: "right",
       width: "25%",
       height: "100%",
-      backgroundColor: theme.palette.background.default
+      backgroundColor: theme.palette.grey["300"]
     },
     mainPanel: {
       float: "left",

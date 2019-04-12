@@ -19,7 +19,7 @@ const educationRows = education => {
 const experience = ({ classes, education, educationTitle }) => {
   return (
     <div className={classes.root}>
-      {educationTitle}
+     <Typography className={classes.educationsTitle} >{educationTitle}</Typography> 
       {educationRows(education)}
     </div>
   );

@@ -2,6 +2,12 @@ import React from "react";
 import PropTypes from "prop-types";
 import Typography from "@material-ui/core/Typography";
 import { connect } from "react-redux";
+import Link from '@material-ui/core/Link';
+import Phone from "@material-ui/icons/Phone";
+import Location from "@material-ui/icons/LocationOn";
+import Email from "@material-ui/icons/Email";
+import People from "@material-ui/icons/People";
+import Computer from "@material-ui/icons/Computer";
 
 const Contacts = ({
   classes,
@@ -9,17 +15,36 @@ const Contacts = ({
   number,
   mail,
   linkedin,
+  linkedinUrl,
   github,
+  githubUrl,
   contactTitle
 }) => {
   return (
     <div className={classes.root}>
-      <Typography>{contactTitle}</Typography>
-      <Typography>{residence}</Typography>
-      <Typography>{number}</Typography>
-      <Typography>{mail}</Typography>
-      <Typography>{linkedin}</Typography>
-      <Typography>{github}</Typography>
+      <Typography variant="subtitle1" className={classes.contactsTitle} >{contactTitle}</Typography>
+    <div className={classes.contactContainer}>
+      <div className={classes.locationContainer}>
+        <Location />
+        <Typography className={classes.iconSeparator}>{residence}</Typography>
+      </div>
+      <div className={classes.telephoneContainer}>
+        <Phone /> 
+        <Typography className={classes.iconSeparator}> {number} </Typography>
+      </div>
+      <div className={classes.mailContainer}>
+        <Email />
+        <Typography className={classes.iconSeparator}> {mail} </Typography>
+      </div>
+      <div className={classes.githubContainer}>
+        <People/> 
+        <Link href={linkedinUrl} variant="body2" className={classes.iconSeparator}> {linkedin} </Link>
+      </div>
+      <div className={classes.linkedinContainer}>
+        <Computer/> 
+        <Link href={githubUrl} variant="body2" className={classes.iconSeparator}> {github} </Link>
+      </div>
+    </div>
     </div>
   );
 };
