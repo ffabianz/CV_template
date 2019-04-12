@@ -57,7 +57,7 @@ const initialState = {
     {
       key: "1",
       name: "Skill",
-      percentage: "10"
+      percentage: 10
     }
   ]
 };

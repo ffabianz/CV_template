@@ -2,13 +2,15 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
+import LinearProgress from '@material-ui/core/LinearProgress';
 
-const skillsRows = skills => {
+const skillsRows = (classes, skills) => {
   return skills.map((skill, key) => {
     return (
-      <div key={skill.key}>
-        <Typography>{skill.name}</Typography>
-        <Typography>{skill.percentage}</Typography>
+      <div className={classes.skillsContainer} key={skill.key}>
+        <Typography className={classes.skillName} >{skill.name}</Typography>
+        <Typography className={classes.skillValue} >{skill.percentage}</Typography>
+        <LinearProgress className={classes.skillBar} variant="determinate" value={skill.percentage} />
       </div>
     );
   });
@@ -17,8 +19,8 @@ const skillsRows = skills => {
 const skills = ({ classes, skills, skillsTitle }) => {
   return (
     <div className={classes.root}>
-      {skillsTitle}
-      {skillsRows(skills)}
+      <Typography className={classes.skillsTitle} >{skillsTitle}</Typography>
+      {skillsRows(classes, skills)}
     </div>
   );
 };

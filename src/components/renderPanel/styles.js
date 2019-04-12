@@ -1,11 +1,11 @@
 const styles = theme => {
   return {
     root: {
-      border: "0.01em solid red",
       margin: "0.5em",
       padding: "0.5em",
       width: "21cm",
-      minHeight: "29.7cm"
+      height: "29.7cm",
+      overflow: "hidden"
     },
     header: {
       background: theme.palette.primary.main,
