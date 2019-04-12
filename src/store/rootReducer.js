@@ -56,8 +56,23 @@ const initialState = {
   skills: [
     {
       key: "1",
-      name: "Skill",
+      name: "Skill A",
       percentage: 10
+    },
+    {
+      key: "2",
+      name: "Skill B",
+      percentage: 30
+    },
+    {
+      key: "3",
+      name: "Skill C",
+      percentage: 20
+    },
+    {
+      key: "4",
+      name: "Skill D",
+      percentage: 70
     }
   ]
 };

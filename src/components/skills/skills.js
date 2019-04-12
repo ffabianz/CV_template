@@ -9,7 +9,7 @@ const skillsRows = (classes, skills) => {
     return (
       <div className={classes.skillsContainer} key={skill.key}>
         <Typography className={classes.skillName} >{skill.name}</Typography>
-        <Typography className={classes.skillValue} >{skill.percentage}</Typography>
+        <Typography className={classes.skillValue} >{skill.percentage}%</Typography>
         <LinearProgress className={classes.skillBar} variant="determinate" value={skill.percentage} />
       </div>
     );

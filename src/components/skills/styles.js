@@ -16,22 +16,24 @@ const styles = theme => {
     },
     skillsContainer: {
       display: "flex",
-      flexDirection: "row",
+      flexDirection: "column",
       textAlign: "left",
+      marginTop: "0.4em"
     },
     skillName: {
       order: 0,
-      marginRight:"0.5em" 
+      width: "30%",
+      marginRight:"0.1em"
     },
     skillValue: {
-      order: 1,
-      marginRight:"0.5em" 
+      order: 2,      
+      width: "20%",
+      marginRight:"0.1em" 
     },
     skillBar: {
-      order: 2,
+      order: 1,
       width: "100%",
-      height: "1em",
-      marginTop: "0.05em"
+      height: "0.8em",
     }
   };
 };
