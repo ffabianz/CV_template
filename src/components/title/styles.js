@@ -1,6 +1,7 @@
 const styles = theme => {
   return {
     root: {
+      display: "flex",
       margin: "1em",
       textTransform: "uppercase"
     },
@@ -10,10 +11,13 @@ const styles = theme => {
       height: "2em"
     },
     separator: {
-      background: theme.palette.primary.main,
+      background: theme.palette.grey["300"],
       width: "10%",
       height: "0.1em",
       margin: "auto",
+    },
+    profilePicture:{
+      paddingRight:"3em"
     }
   };
 };

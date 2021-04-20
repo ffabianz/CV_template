@@ -8,12 +8,13 @@ import VideogameAsset from "@material-ui/icons/VideogameAsset";
 import FlightTakeoff from "@material-ui/icons/FlightTakeoff";
 
 
+
 const hobbies = ({ classes, hobbies, hobbiesTitle }) => {
   return (
     <div className={classes.root}>
-      <Typography className={classes.hobbiesTitle} >{hobbiesTitle}</Typography>
+      <Typography variant="subtitle2" className={classes.hobbiesTitle} >{hobbiesTitle}</Typography>
       <div className={classes.hobbiesContainer} key={hobbies[0].key}>
-        <FitnessCenter />
+        <FitnessCenter color="action" />
         <Typography className={classes.hobbyName} >{hobbies[0].name}</Typography>
       </div>
       <div className={classes.hobbiesContainer} key={hobbies[1].key}>
@@ -21,11 +22,11 @@ const hobbies = ({ classes, hobbies, hobbiesTitle }) => {
         <Typography className={classes.hobbyName} >{hobbies[1].name}</Typography>
       </div>
       <div className={classes.hobbiesContainer} key={hobbies[2].key}>
-        <VideogameAsset />
+        <VideogameAsset color="secondary"/>
         <Typography className={classes.hobbyName} >{hobbies[2].name}</Typography>
       </div>
       <div className={classes.hobbiesContainer} key={hobbies[3].key}>
-        <FlightTakeoff />
+        <FlightTakeoff color="primary"/>
         <Typography className={classes.hobbyName} >{hobbies[3].name}</Typography>
       </div>
     </div>

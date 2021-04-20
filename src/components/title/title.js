@@ -6,9 +6,15 @@ import { connect } from "react-redux";
 const Title = ({ classes, name, role }) => {
   return (
     <div className={classes.root}>
-      <Typography variant="h3">{name}</Typography>
-      <div className={classes.separator}></div>
-      <Typography variant="h5">{role}</Typography>
+      <div className={classes.profilePicture}>
+       <img src="https://d3isma7snj3lcx.cloudfront.net/optim/images/news/30/3050806801/edmund-mcmillen-tease-un-nouveau-jeu-dans-l-univers-de-the-binding-of-isaac-fc6802a7__1920_1080__0-142-1000-465.jpg" alt="Girl in a jacket" width="100" height="100"></img>
+      </div>
+      <div className={classes.profile}>
+        <Typography variant="h4">{name}</Typography>
+        <div className={classes.separator}></div>
+        <Typography variant="h6">{role}</Typography>
+      </div>
+      
     </div>
   );
 };

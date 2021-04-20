@@ -1,12 +1,20 @@
 const styles = theme => {
   return {
     root: {
-      margin: "1em 1em 1.5em 1em",
+      margin: "1em",
       display: "flex",
       flexDirection: "column",
       textAlign: "left",
     },
-    languagesTitle: {
+    test:{
+      display: "flex",
+      flexWrap: "wrap",
+    },
+    iconContainer:{
+      paddingTop: "0.2em",
+      paddingRight: "0.4em"
+    },
+    devSymbolsTitle: {
       float: "left",
       textTransform: "uppercase",
       color: "black",
@@ -14,17 +22,11 @@ const styles = theme => {
       width: "100%",
       textAlign: "left",
     },
-    languageContainer:{
+    devSymbolContainer:{
       display: "flex",
       flexDirection: "row",
+      paddingRight: "1.5em"
     },
-    flag:{
-      paddingTop: "0.4em",
-      paddingRight: "0.3em",
-    },
-    body1: {
-      fontSize: "0.7em"
-    }
   };
 };
 

@@ -9,7 +9,7 @@ const styles = theme => {
     hobbiesTitle: {
       float: "left",
       textTransform: "uppercase",
-      color: theme.palette.primary.light,
+      color: "black",
       margin: "0.5em 0.5em 1em 0em",
       width: "100%",
       textAlign: "left",
